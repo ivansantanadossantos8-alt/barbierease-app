@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { LayoutDashboard, CalendarCheck, ShoppingCart } from "lucide-react";
 import ageniooLogo from "@/assets/agenioo-logo.jpg";
+import ageniooLogoWhite from "@/assets/agenioo-logo-white.jpg";
 
 // Android Icon Component
 const AndroidIcon = ({ className }: { className?: string }) => (
@@ -90,7 +91,7 @@ const Index = () => {
                   
                   {/* Header */}
                   <rect x="40" y="50" width="220" height="60" rx="12" fill="#f97316" opacity="0.9"/>
-                  <image href={ageniooLogo} x="70" y="60" width="160" height="40" preserveAspectRatio="xMidYMid meet" style={{ filter: 'brightness(0) invert(1)' }} />
+                  <image href={ageniooLogoWhite} x="70" y="60" width="160" height="40" preserveAspectRatio="xMidYMid meet" />
                   
                   {/* Calendar Icon Area */}
                   <rect x="40" y="130" width="100" height="100" rx="12" fill="#1a1a1a"/>
