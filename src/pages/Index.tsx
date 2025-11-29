@@ -90,7 +90,20 @@ const Index = () => {
                   
                   {/* Header */}
                   <rect x="40" y="50" width="220" height="60" rx="12" fill="#f97316" opacity="0.9"/>
-                  <text x="150" y="85" textAnchor="middle" fill="#fff" fontSize="20" fontWeight="bold">AGENIOO</text>
+                  <defs>
+                    <filter id="whiteFilter">
+                      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0"/>
+                    </filter>
+                  </defs>
+                  <image 
+                    href={ageniooLogo} 
+                    x="90" 
+                    y="60" 
+                    width="120" 
+                    height="40" 
+                    preserveAspectRatio="xMidYMid meet"
+                    filter="url(#whiteFilter)"
+                  />
                   
                   {/* Calendar Icon Area */}
                   <rect x="40" y="130" width="100" height="100" rx="12" fill="#1a1a1a"/>
