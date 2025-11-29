@@ -1,6 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { LayoutDashboard, CalendarCheck, ShoppingCart, Smartphone } from "lucide-react";
+import { LayoutDashboard, CalendarCheck, ShoppingCart } from "lucide-react";
+
+// Android Icon Component
+const AndroidIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.43 11.43 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.81 10.81 0 0 0 1 18h22a10.81 10.81 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0zm7.5 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0z"/>
+  </svg>
+);
+
+// iOS/Apple Icon Component
+const AppleIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+  </svg>
+);
 
 const Index = () => {
   return (
@@ -28,7 +42,7 @@ const Index = () => {
                   size="lg" 
                   className="text-base font-semibold px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
                 >
-                  <Smartphone className="mr-2 h-5 w-5" />
+                  <AndroidIcon className="mr-2 h-5 w-5" />
                   Baixar para Android
                 </Button>
                 <Button 
@@ -36,7 +50,7 @@ const Index = () => {
                   variant="outline" 
                   className="text-base font-semibold px-8 py-6 border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
                 >
-                  <Smartphone className="mr-2 h-5 w-5" />
+                  <AppleIcon className="mr-2 h-5 w-5" />
                   Baixar para iOS
                 </Button>
               </div>
@@ -172,7 +186,7 @@ const Index = () => {
                 size="lg" 
                 className="text-base font-semibold px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
               >
-                <Smartphone className="mr-2 h-5 w-5" />
+                <AndroidIcon className="mr-2 h-5 w-5" />
                 Baixar para Android
               </Button>
               <Button 
@@ -180,7 +194,7 @@ const Index = () => {
                 variant="outline" 
                 className="text-base font-semibold px-8 py-6 border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
               >
-                <Smartphone className="mr-2 h-5 w-5" />
+                <AppleIcon className="mr-2 h-5 w-5" />
                 Baixar para iOS
               </Button>
             </div>
