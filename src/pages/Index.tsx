@@ -144,7 +144,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Agendamento Fácil</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Seus clientes podem agendar direto pelo app, reduzindo faltas e otimizando sua agenda.
+                  Seus clientes podem agendar direto pelo link que você gerar dentro do app, reduzindo faltas e otimizando sua agenda.
                 </p>
               </div>
             </Card>
@@ -157,7 +157,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Loja Integrada</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Venda produtos e serviços extras diretamente pelo app e <span className="text-primary font-semibold">aumente seu faturamento</span>.
+                  Venda produtos da sua barbearia direto pelo app — pomadas, cremes, pós-barba, shampoos e muito mais — e aumente seu faturamento sem esforço.
                 </p>
               </div>
             </Card>
