@@ -22,16 +22,16 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Fixed Header with Logo */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <img 
               src={ageniooLogo} 
               alt="AGENIOO Logo" 
-              className="h-8 sm:h-10 w-auto object-contain"
+              className="h-7 sm:h-10 w-auto object-contain"
             />
             <Button 
               size="sm"
-              className="bg-primary hover:bg-primary/90 text-sm font-semibold"
+              className="bg-primary hover:bg-primary/90 text-xs sm:text-sm font-semibold px-4 py-2 h-9"
             >
               Baixar App
             </Button>
@@ -40,45 +40,45 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-24">
+      <section className="relative overflow-hidden pt-20 sm:pt-24">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none" />
         
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="container mx-auto px-4 pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-24 lg:pb-32">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Left Content */}
-            <div className="space-y-8 text-center lg:text-left">
-              <div className="space-y-4">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
+              <div className="space-y-3 sm:space-y-4">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                   O App de Agendamento que Todo Barbeiro{" "}
                   <span className="text-primary">Precisa</span>
                 </h1>
-                <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
+                <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                   O sistema de agendamento perfeito para barbeiros que querem mais profissionalismo e zero complicação.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
-                  className="text-base font-semibold px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
+                  className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
                 >
-                  <AndroidIcon className="mr-2 h-5 w-5" />
+                  <AndroidIcon className="mr-2 h-5 w-5 flex-shrink-0" />
                   Baixar para Android
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="text-base font-semibold px-8 py-6 border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
+                  className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
                 >
-                  <AppleIcon className="mr-2 h-5 w-5" />
+                  <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
                   Baixar para iOS
                 </Button>
               </div>
             </div>
 
             {/* Right Mockup */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-sm animate-float">
+            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
+              <div className="relative w-full max-w-[280px] sm:max-w-sm animate-float">
                 {/* Phone Mockup SVG */}
                 <svg viewBox="0 0 300 600" className="w-full h-auto drop-shadow-2xl" xmlns="http://www.w3.org/2000/svg">
                   {/* Phone Frame */}
@@ -140,43 +140,43 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-secondary/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
             {/* Feature 1 */}
-            <Card className="p-8 card-gradient border-border/50 hover:border-primary/50 transition-all hover:scale-105 hover:shadow-2xl group">
-              <div className="space-y-4">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <LayoutDashboard className="h-7 w-7 text-primary" />
+            <Card className="p-6 sm:p-8 card-gradient border-border/50 hover:border-primary/50 transition-all hover:scale-105 hover:shadow-2xl group">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <LayoutDashboard className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Controle Total</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold">Controle Total</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Gerencie todos os seus agendamentos, clientes e serviços em um único lugar. Simples e intuitivo.
                 </p>
               </div>
             </Card>
 
             {/* Feature 2 */}
-            <Card className="p-8 card-gradient border-border/50 hover:border-primary/50 transition-all hover:scale-105 hover:shadow-2xl group">
-              <div className="space-y-4">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <CalendarCheck className="h-7 w-7 text-primary" />
+            <Card className="p-6 sm:p-8 card-gradient border-border/50 hover:border-primary/50 transition-all hover:scale-105 hover:shadow-2xl group">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <CalendarCheck className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Agendamento Fácil</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold">Agendamento Fácil</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Seus clientes podem agendar direto pelo link que você gerar dentro do app, reduzindo faltas e otimizando sua agenda.
                 </p>
               </div>
             </Card>
 
             {/* Feature 3 */}
-            <Card className="p-8 card-gradient border-border/50 hover:border-primary/50 transition-all hover:scale-105 hover:shadow-2xl group">
-              <div className="space-y-4">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <ShoppingCart className="h-7 w-7 text-primary" />
+            <Card className="p-6 sm:p-8 card-gradient border-border/50 hover:border-primary/50 transition-all hover:scale-105 hover:shadow-2xl group">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <ShoppingCart className="h-6 w-6 sm:h-7 sm:w-7 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Loja Integrada</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold">Loja Integrada</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Venda produtos da sua barbearia direto pelo app — pomadas, cremes, pós-barba, shampoos e muito mais — e aumente seu faturamento sem esforço.
                 </p>
               </div>
@@ -186,35 +186,35 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-12 sm:py-16 lg:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent pointer-events-none" />
         
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
               Baixe Agora e Teste o AGENIOO
             </h2>
             
             <div className="inline-block">
-              <p className="text-xl sm:text-2xl font-semibold bg-primary/10 border border-primary/30 rounded-2xl px-8 py-4 glow-primary">
+              <p className="text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold bg-primary/10 border border-primary/30 rounded-2xl px-6 sm:px-8 py-3 sm:py-4 glow-primary">
                 Experimente o AGENIOO por <span className="text-primary">14 dias grátis!</span> Sem compromisso.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <div className="flex flex-col gap-3 sm:gap-4 justify-center pt-4">
               <Button 
                 size="lg" 
-                className="text-base font-semibold px-8 py-6 bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
+                className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
               >
-                <AndroidIcon className="mr-2 h-5 w-5" />
+                <AndroidIcon className="mr-2 h-5 w-5 flex-shrink-0" />
                 Baixar para Android
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-base font-semibold px-8 py-6 border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
+                className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
               >
-                <AppleIcon className="mr-2 h-5 w-5" />
+                <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
                 Baixar para iOS
               </Button>
             </div>
@@ -223,10 +223,10 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border/50 py-8">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2024 AGENIOO. Todos os direitos reservados.</p>
+      <footer className="border-t border-border/50 py-6 sm:py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
+            <p className="text-center sm:text-left">© 2024 AGENIOO. Todos os direitos reservados.</p>
             <a 
               href="https://wa.me/5500000000000" 
               target="_blank" 
