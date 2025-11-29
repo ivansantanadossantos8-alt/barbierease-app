@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { LayoutDashboard, CalendarCheck, ShoppingCart } from "lucide-react";
+import ageniooLogo from "@/assets/agenioo-logo.jpg";
 
 // Android Icon Component
 const AndroidIcon = ({ className }: { className?: string }) => (
@@ -19,8 +20,27 @@ const AppleIcon = ({ className }: { className?: string }) => (
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Fixed Header with Logo */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <img 
+              src={ageniooLogo} 
+              alt="AGENIOO Logo" 
+              className="h-8 sm:h-10 w-auto object-contain"
+            />
+            <Button 
+              size="sm"
+              className="bg-primary hover:bg-primary/90 text-sm font-semibold"
+            >
+              Baixar App
+            </Button>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden pt-24">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
