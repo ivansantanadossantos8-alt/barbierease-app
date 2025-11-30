@@ -191,8 +191,13 @@ const Index = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-3xl mx-auto space-y-6 sm:space-y-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
-              Baixe Agora e Teste o AGENIOO
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold flex flex-wrap items-center justify-center gap-3">
+              Baixe Agora e Teste o
+              <img 
+                src={ageniooLogo} 
+                alt="AGENIOO" 
+                className="h-8 sm:h-10 lg:h-12 w-auto object-contain inline-block"
+              />
             </h2>
             
             <div className="inline-block">
