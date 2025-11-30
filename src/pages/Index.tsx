@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { LayoutDashboard, CalendarCheck, ShoppingCart } from "lucide-react";
-import ageniooLogo from "@/assets/agenioo-logo.png";
+import ageniooLogo from "@/assets/agenioo-logo.jpg";
 
 // Android Icon Component
 const AndroidIcon = ({ className }: { className?: string }) => (
@@ -27,7 +27,7 @@ const Index = () => {
             <img 
               src={ageniooLogo} 
               alt="AGENIOO Logo" 
-              className="h-8 sm:h-12 w-auto object-contain"
+              className="h-7 sm:h-10 w-auto object-contain"
             />
             <Button 
               size="sm"
@@ -50,7 +50,7 @@ const Index = () => {
               <div className="space-y-3 sm:space-y-4">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                   O App de Agendamento que Todo Barbeiro{" "}
-                  <span className="text-primary">Precisa!</span>
+                  <span className="text-primary">Precisa</span>
                 </h1>
                 <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                   O sistema de agendamento perfeito para barbeiros que querem mais profissionalismo e zero complicação.
@@ -90,7 +90,7 @@ const Index = () => {
                   
                   {/* Header */}
                   <rect x="40" y="50" width="220" height="60" rx="12" fill="#f97316" opacity="0.9"/>
-                  <image href={ageniooLogo} x="70" y="60" width="160" height="40" preserveAspectRatio="xMidYMid meet" style={{ filter: 'brightness(0) invert(1)' }} />
+                  <text x="150" y="85" textAnchor="middle" fill="#fff" fontSize="20" fontWeight="bold">AGENIOO</text>
                   
                   {/* Calendar Icon Area */}
                   <rect x="40" y="130" width="100" height="100" rx="12" fill="#1a1a1a"/>
