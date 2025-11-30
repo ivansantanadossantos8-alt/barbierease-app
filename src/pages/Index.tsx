@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { LayoutDashboard, CalendarCheck, ShoppingCart } from "lucide-react";
 import ageniooLogo from "@/assets/agenioo-logo.jpg";
-import ageniooLogoWhite from "@/assets/agenioo-logo-white.jpg";
+import ageniooLogoWhite from "@/assets/agenioo-logo-white.png";
 
 // Android Icon Component
 const AndroidIcon = ({ className }: { className?: string }) => (
