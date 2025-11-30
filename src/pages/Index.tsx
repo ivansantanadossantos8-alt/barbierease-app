@@ -50,7 +50,7 @@ const Index = () => {
               <div className="space-y-3 sm:space-y-4">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                   O App de Agendamento que Todo Barbeiro{" "}
-                  <span className="text-primary">Precisa</span>
+                  <span className="text-primary">Precisa!</span>
                 </h1>
                 <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                   O sistema de agendamento perfeito para barbeiros que querem mais profissionalismo e zero complicação.
