@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { LayoutDashboard, CalendarCheck, ShoppingCart } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { LayoutDashboard, CalendarCheck, ShoppingCart, MessageCircle, Headphones } from "lucide-react";
 import ageniooLogo from "@/assets/agenioo-logo.jpg";
 
 // Android Icon Component
@@ -216,6 +222,207 @@ const Index = () => {
                 <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
                 Baixar para iOS
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Support Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-primary/5 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10 pointer-events-none" />
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl mx-auto text-center space-y-6 sm:space-y-8">
+            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/20 border-2 border-primary glow-primary">
+              <Headphones className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
+            </div>
+            
+            <div className="space-y-3 sm:space-y-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+                Suporte <span className="text-primary">Rápido e Direto</span>
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto">
+                Ficou com alguma dúvida? Nosso time está pronto para te ajudar pelo WhatsApp. Atendimento humanizado e sem enrolação.
+              </p>
+            </div>
+            
+            <a 
+              href="https://wa.me/5500000000000" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-6 sm:px-8 py-4 sm:py-5 rounded-xl transition-all hover:scale-105 shadow-lg"
+            >
+              <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
+              <span className="text-sm sm:text-base">Falar com o Suporte no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center space-y-3 sm:space-y-4 mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+                FAQ OFICIAL – <span className="text-primary">AGENIOO</span>
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground">
+                Tire suas dúvidas sobre o sistema
+              </p>
+            </div>
+
+            {/* Sobre o Sistema */}
+            <div className="mb-6 sm:mb-8">
+              <h3 className="text-lg sm:text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary"></span>
+                SOBRE O SISTEMA
+              </h3>
+              <Accordion type="single" collapsible className="space-y-2">
+                <AccordionItem value="item-1" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    1. O Agenioo serve para que tipo de negócio?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    O Agenioo é um sistema de gestão profissional desenvolvido especificamente para barbeiros e barbearias. Ele organiza a agenda, evita furos, gerencia o financeiro e ainda permite a venda de produtos. Serve tanto para o barbeiro que trabalha sozinho (solos) quanto para grandes redes com vários profissionais.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-2" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    2. O Agenioo funciona no computador ou só no celular?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    O Agenioo funciona em ambos (site e aplicativo), mas a experiência foi desenhada para ser perfeita no celular. É pelo app que você recebe as notificações instantâneas que garantem o controle total da sua rotina na palma da mão.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-3" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    3. O Agenioo é difícil de usar ou requer treinamento?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    O Agenioo tem "Curva de Aprendizado Zero". Se você sabe usar o WhatsApp ou Instagram, sabe usar o Agenioo. A interface é limpa, intuitiva e feita para não travar a sua rotina.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+
+            {/* Agendamento e Funcionalidades */}
+            <div className="mb-6 sm:mb-8">
+              <h3 className="text-lg sm:text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary"></span>
+                AGENDAMENTO E FUNCIONALIDADES
+              </h3>
+              <Accordion type="single" collapsible className="space-y-2">
+                <AccordionItem value="item-4" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    4. O Agenioo permite que o meu cliente agende sozinho?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim. No Agenioo, você gera um link exclusivo da sua barbearia. Você envia esse link ou coloca na bio do Instagram, e o cliente escolhe o serviço e o horário sem precisar te chamar.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-5" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    5. O Agenioo me avisa quando um cliente marca horário?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim! O Agenioo envia notificações instantâneas no seu celular sempre que houver um novo agendamento, um cancelamento ou uma alteração de horário. Você nunca mais será pego de surpresa.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-6" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    6. O Agenioo permite vender produtos (pomadas, óleos) pelo app?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim, e esse é um grande diferencial. O Agenioo possui um Marketplace Integrado. Seu cliente pode agendar o corte e já adicionar um produto ao carrinho na mesma tela. Ele compra pelo app e retira na cadeira, durante o corte, aumentando seu faturamento sem esforço.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-7" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    7. O Agenioo suporta barbearias com vários barbeiros?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim. O Agenioo permite adicionar quantos profissionais forem necessários. O dono da barbearia consegue gerenciar todas as agendas e o faturamento da equipe em um único painel.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-8" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    8. O Agenioo ajuda a controlar o financeiro da barbearia?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim. O Agenioo gera relatórios automáticos que mostram quanto você faturou no dia, no mês, quais são os serviços mais vendidos e os horários mais lucrativos.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+
+            {/* Planos, Preços e Benefícios */}
+            <div className="mb-6 sm:mb-8">
+              <h3 className="text-lg sm:text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary"></span>
+                PLANOS, PREÇOS E BENEFÍCIOS
+              </h3>
+              <Accordion type="single" collapsible className="space-y-2">
+                <AccordionItem value="item-9" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    9. O Agenioo custa quanto por mês?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    O Agenioo tem um plano único e completo por apenas R$ 48,00 mensais. Isso inclui acesso total ao sistema, agenda online, notificações, relatórios financeiros e marketplace.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-10" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    10. O Agenioo oferece algum período de teste grátis?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim. O Agenioo oferece 14 dias de teste gratuito. Você baixa, configura e usa todas as ferramentas sem pagar nada nas duas primeiras semanas para ver a transformação no seu negócio.
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-11" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    11. O Agenioo tem algum programa de desconto por indicação?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim, temos o sistema mais agressivo do mercado. No Agenioo, ao indicar um amigo barbeiro que assine o app, você ganha R$ 8,00 de desconto na sua mensalidade. Esse desconto é cumulativo: se indicar 6 amigos, sua mensalidade pode sair de graça.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+
+            {/* Suporte e Cadastro */}
+            <div>
+              <h3 className="text-lg sm:text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-primary"></span>
+                SUPORTE E CADASTRO
+              </h3>
+              <Accordion type="single" collapsible className="space-y-2">
+                <AccordionItem value="item-12" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    12. O Agenioo exige CNPJ para fazer o cadastro?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Não. O Agenioo foi feito para todos. Você pode se cadastrar e usar todas as funções sendo um barbeiro autônomo (CPF) ou uma empresa registrada (CNPJ).
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="item-13" className="bg-card border border-border/50 rounded-xl px-4 sm:px-6">
+                  <AccordionTrigger className="text-sm sm:text-base font-medium text-left py-4">
+                    13. O Agenioo oferece suporte caso eu tenha dúvidas?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                    Sim. O Agenioo conta com um suporte rápido e direto via WhatsApp para resolver qualquer dúvida que você tenha durante o uso.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </div>
