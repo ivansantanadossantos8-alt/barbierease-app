@@ -142,6 +142,70 @@ const Index = () => {
             </div>
           </div>
         </div>
+
+        {/* About Section */}
+        <div className="container mx-auto px-4 pb-16 sm:pb-24">
+          <div className="max-w-4xl mx-auto space-y-12">
+            {/* O que é o Agenioo */}
+            <div className="text-center space-y-4">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+                O QUE É O <span className="text-primary">AGENIOO</span>?
+              </h2>
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                O AGENIOO é a solução completa de gestão para barbearias na palma da sua mão. Unimos agendamento online, controle financeiro e venda de produtos em um aplicativo simples, feito para você focar no corte enquanto a tecnologia organiza o seu negócio.
+              </p>
+            </div>
+
+            {/* Por que você deveria usar */}
+            <div className="space-y-6">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center">
+                POR QUE VOCÊ DEVERIA <span className="text-primary">USAR</span>?
+              </h3>
+              
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-secondary/50 border border-border/50">
+                  <span className="text-primary text-xl flex-shrink-0">✅</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Agenda no Piloto Automático</h4>
+                    <p className="text-sm text-muted-foreground">Seu cliente agenda sozinho pelo link, 24 horas por dia. Fim das mensagens no WhatsApp.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-secondary/50 border border-border/50">
+                  <span className="text-primary text-xl flex-shrink-0">✅</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Venda Mais (Marketplace)</h4>
+                    <p className="text-sm text-muted-foreground">O único que permite ao cliente comprar produtos (pomadas/óleos) direto no agendamento. Aumente seu lucro sem esforço.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-secondary/50 border border-border/50">
+                  <span className="text-primary text-xl flex-shrink-0">✅</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Zero Furos</h4>
+                    <p className="text-sm text-muted-foreground">Notificações instantâneas para você e lembretes automáticos para o cliente reduzem as faltas drasticamente.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-secondary/50 border border-border/50">
+                  <span className="text-primary text-xl flex-shrink-0">✅</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Indique e Lucre</h4>
+                    <p className="text-sm text-muted-foreground">Ganhe descontos cumulativos na mensalidade indicando amigos. Sua conta pode sair de graça.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-secondary/50 border border-border/50 sm:col-span-2 sm:max-w-md sm:mx-auto">
+                  <span className="text-primary text-xl flex-shrink-0">✅</span>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Simplicidade Radical</h4>
+                    <p className="text-sm text-muted-foreground">Visual limpo e fácil. Não precisa de treinamento, é baixar e usar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Features Section */}
