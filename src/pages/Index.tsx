@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { LayoutDashboard, CalendarCheck, ShoppingCart, MessageCircle, Headphones } from "lucide-react";
+import { LayoutDashboard, CalendarCheck, ShoppingCart, MessageCircle, Headphones, Users, Calendar, TrendingUp, Star, Gift, Check, Scissors } from "lucide-react";
 import ageniooLogo from "@/assets/agenioo-logo.jpg";
 
 // Android Icon Component
@@ -496,7 +496,7 @@ const Index = () => {
       <footer className="border-t border-border/50 py-6 sm:py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
-            <p className="text-center sm:text-left">© 2024 AGENIOO. Todos os direitos reservados.</p>
+            <p className="text-center sm:text-left">© 2025 AGENIOO. Todos os direitos reservados.</p>
             <a 
               href="https://wa.me/5500000000000" 
               target="_blank" 
