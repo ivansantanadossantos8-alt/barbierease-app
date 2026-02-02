@@ -38,6 +38,7 @@ const Index = () => {
             <Button 
               size="sm"
               className="bg-primary hover:bg-primary/90 text-xs sm:text-sm font-semibold px-4 py-2 h-9"
+              onClick={() => document.getElementById('download-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Baixar App
             </Button>
@@ -66,9 +67,12 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
+                  asChild
                 >
-                  <AndroidIcon className="mr-2 h-5 w-5 flex-shrink-0" />
-                  Baixar para Android
+                  <a href="https://play.google.com/store/apps/details?id=com.agenioo.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                    <AndroidIcon className="mr-2 h-5 w-5 flex-shrink-0" />
+                    Baixar para Android
+                  </a>
                 </Button>
                 <Button 
                   size="lg" 
@@ -255,7 +259,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-24 relative overflow-hidden">
+      <section id="download-section" className="py-12 sm:py-16 lg:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent pointer-events-none" />
         
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -274,9 +278,12 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto bg-primary hover:bg-primary/90 glow-primary transition-all hover:scale-105"
+                asChild
               >
-                <AndroidIcon className="mr-2 h-5 w-5 flex-shrink-0" />
-                Baixar para Android
+                <a href="https://play.google.com/store/apps/details?id=com.agenioo.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+                  <AndroidIcon className="mr-2 h-5 w-5 flex-shrink-0" />
+                  Baixar para Android
+                </a>
               </Button>
               <Button 
                 size="lg" 
@@ -311,7 +318,7 @@ const Index = () => {
             </div>
             
             <a 
-              href="https://wa.me/5500000000000" 
+              href="https://wa.me/5573981804538" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-6 sm:px-8 py-4 sm:py-5 rounded-xl transition-all hover:scale-105 shadow-lg"
