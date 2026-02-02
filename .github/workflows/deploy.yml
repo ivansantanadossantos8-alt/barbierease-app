@@ -24,6 +24,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Copy .nojekyll to dist
+        run: cp public/.nojekyll dist/.nojekyll
+      - name: Copy _headers to dist
+        run: cp public/_headers dist/_headers
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
