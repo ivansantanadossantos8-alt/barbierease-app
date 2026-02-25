@@ -78,9 +78,12 @@ const Index = () => {
                   size="lg" 
                   variant="outline" 
                   className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
+                  asChild
                 >
-                  <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
-                  Baixar para iOS
+                  <a href="https://apps.apple.com/br/app/agenioo-gestão-de-barbearias/id6757201968" target="_blank" rel="noopener noreferrer">
+                    <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
+                    Baixar para iOS
+                  </a>
                 </Button>
               </div>
             </div>
@@ -289,9 +292,12 @@ const Index = () => {
                 size="lg" 
                 variant="outline" 
                 className="text-sm sm:text-base font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto border-primary text-primary hover:bg-primary/10 transition-all hover:scale-105"
+                asChild
               >
-                <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
-                Baixar para iOS
+                <a href="https://apps.apple.com/br/app/agenioo-gestão-de-barbearias/id6757201968" target="_blank" rel="noopener noreferrer">
+                  <AppleIcon className="mr-2 h-5 w-5 flex-shrink-0" />
+                  Baixar para iOS
+                </a>
               </Button>
             </div>
           </div>
